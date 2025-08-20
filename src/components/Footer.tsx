@@ -2,7 +2,7 @@ import { Linkedin, Instagram, Youtube, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white section-padding">
+    <footer className="bg-gradient-brand-blue text-white section-padding">
       <div className="section-container">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Logo & Description */}
@@ -40,7 +40,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <div className="space-y-3 text-gray-300">
+            <div className="space-y-3 text-gray">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-secondary" />
                 <span>dayvisson@techsaleshacker.com</span>
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-12 pt-8 text-center text-gray-400">
+        <div className="border-t border-white/20 mt-12 pt-8 text-center text-white">
           <p>&copy; 2024 Dayvisson Da Silva. All rights reserved.</p>
         </div>
       </div>
