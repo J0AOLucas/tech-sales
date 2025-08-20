@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dayvisson Da Silva Speaker Landing Page Design System */
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --navy: 210 25% 28%;          /* #364b60 */
+    --red: 354 70% 54%;           /* #E63946 */
+    --white: 0 0% 100%;           /* #FFFFFF */
+    --gray-50: 0 0% 98%;
+    --gray-100: 0 0% 95%;
+    --gray-200: 0 0% 90%;
+    --gray-300: 0 0% 80%;
+    --gray-400: 0 0% 60%;
+    --gray-500: 0 0% 40%;
+    --gray-600: 0 0% 30%;
+    --gray-700: 0 0% 20%;
+    --gray-800: 0 0% 10%;
+    --gray-900: 0 0% 5%;
+    
+    /* Semantic Design Tokens */
+    --background: var(--white);
+    --foreground: var(--navy);
+    
+    --primary: var(--navy);
+    --primary-foreground: var(--white);
+    
+    --secondary: var(--red);
+    --secondary-foreground: var(--white);
+    
+    --accent: var(--gray-100);
+    --accent-foreground: var(--navy);
+    
+    --muted: var(--gray-50);
+    --muted-foreground: var(--gray-600);
+    
+    --card: var(--white);
+    --card-foreground: var(--navy);
+    
+    --popover: var(--white);
+    --popover-foreground: var(--navy);
+    
+    --destructive: var(--red);
+    --destructive-foreground: var(--white);
+    
+    --border: var(--gray-200);
+    --input: var(--gray-200);
+    --ring: var(--navy);
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, #3c9bd5, #3c9bd5);
+    --gradient-section: linear-gradient(180deg, hsl(var(--gray-50)), hsl(var(--white)));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--red)), hsl(354 70% 48%));
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(var(--navy) / 0.1);
+    --shadow-medium: 0 4px 16px -4px hsl(var(--navy) / 0.15);
+    --shadow-strong: 0 8px 32px -8px hsl(var(--navy) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--red) / 0.3);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  
+  /* Custom Components */
+  .hero-heading {
+    @apply text-5xl md:text-6xl font-extrabold leading-tight;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: white;
+  }
+  
+  .section-heading {
+    @apply text-4xl md:text-5xl font-bold text-primary mb-6;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .cta-gradient {
+    background: var(--gradient-cta);
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .card-elevated {
+    background: hsl(var(--card));
+    box-shadow: var(--shadow-medium);
+    border: 1px solid hsl(var(--border));
+  }
+}
+
+@layer components {
+  .btn-hero {
+    @apply px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .btn-primary {
+    @apply btn-hero bg-secondary text-secondary-foreground hover:opacity-90;
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .btn-secondary {
+    @apply btn-hero bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground;
+  }
+  
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+}
