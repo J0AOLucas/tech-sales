@@ -3,7 +3,7 @@ import { Play } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-to-br from-primary to-primary/90">
+    <section className="relative min-h-screen flex items-center bg-gradient-brand-blue">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Hero Content */}

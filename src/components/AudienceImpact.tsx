@@ -15,7 +15,7 @@ const AudienceImpact = () => {
   ];
 
   return (
-    <section className="section-padding bg-primary text-white">
+    <section className="section-padding bg-gradient-brand-blue text-white">
       <div className="section-container">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
@@ -43,13 +43,13 @@ const AudienceImpact = () => {
               <div className="text-center">
                 <p className="text-sm text-gray-300 mb-2 font-medium">FROM</p>
                 <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-                  <div className="bg-red-500/20 text-red-300 px-4 py-2 rounded-lg font-medium">
+                  <div className="bg-red-500 text-white px-4 py-2 rounded-lg font-medium">
                     Confused
                   </div>
-                  <div className="bg-red-500/20 text-red-300 px-4 py-2 rounded-lg font-medium">
+                  <div className="bg-red-500 text-white px-4 py-2 rounded-lg font-medium">
                     Overlooked
                   </div>
-                  <div className="bg-red-500/20 text-red-300 px-4 py-2 rounded-lg font-medium">
+                  <div className="bg-red-500 text-white px-4 py-2 rounded-lg font-medium">
                     Stuck
                   </div>
                 </div>
@@ -65,13 +65,13 @@ const AudienceImpact = () => {
               <div className="text-center">
                 <p className="text-sm text-gray-300 mb-2 font-medium">TO</p>
                 <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-                  <div className="bg-green-500/20 text-green-300 px-4 py-2 rounded-lg font-medium">
+                  <div className="bg-green-500 text-white px-4 py-2 rounded-lg font-medium">
                     Confident
                   </div>
-                  <div className="bg-green-500/20 text-green-300 px-4 py-2 rounded-lg font-medium">
+                  <div className="bg-green-500 text-white px-4 py-2 rounded-lg font-medium">
                     In-Demand
                   </div>
-                  <div className="bg-green-500/20 text-green-300 px-4 py-2 rounded-lg font-medium">
+                  <div className="bg-green-500 text-white px-4 py-2 rounded-lg font-medium">
                     Hired
                   </div>
                 </div>
