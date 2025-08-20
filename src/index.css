@@ -8,7 +8,7 @@
   :root {
     /* Brand Colors */
     --navy: 210 25% 28%;          /* #364b60 */
-    --red: 354 70% 54%;           /* #E63946 */
+    --red: 15 67% 55%;            /* #D75A43 - R:215 G:90 B:67 */
     --white: 0 0% 100%;           /* #FFFFFF */
     --gray-50: 0 0% 98%;
     --gray-100: 0 0% 95%;
@@ -159,6 +159,10 @@
     background: hsl(var(--card));
     box-shadow: var(--shadow-medium);
     border: 1px solid hsl(var(--border));
+  }
+  
+  .text-brand-red {
+    color: hsl(var(--red));
   }
 }
 

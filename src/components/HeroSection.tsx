@@ -12,7 +12,7 @@ const HeroSection = () => {
               <h1 className="hero-heading">
                 Dayvisson da Silva
               </h1>
-              <p className="text-2xl md:text-3xl font-semibold text-red-500">
+              <p className="text-2xl md:text-3xl font-semibold text-brand-red">
                 Job Search Strategist | The Tech Sales Hacker | Tech Talent Expert
               </p>
               <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
